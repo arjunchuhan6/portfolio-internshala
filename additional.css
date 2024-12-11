@@ -1,0 +1,260 @@
+/* navigation css */
+.header-section{
+  color: rgb(191, 216, 238);
+  background: rgba(44, 0, 240, 0.836);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 20px;
+  align-items: center;
+  font-size: 25px;
+}
+nav { 
+    gap: 20px;
+    width :100%;
+    align-items: center;
+  }
+  
+  nav ul:focus{
+    outline: none;
+  }
+  
+  nav ul{
+    width:100%;
+    height: 70px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+  
+nav ul li a{
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+  
+nav ul li a:hover {
+  color:white;
+  background-color: inherit;
+  transform: translatey(-15px);
+  color: rgb(128, 252, 5);
+}
+
+#home{
+  width: 100%;
+  background: rgb(33, 83, 221);
+  display: flex;
+  /* flex-direction: column; */
+  justify-content:center;
+  align-items: center;
+  justify-content: space-around;
+  align-self: auto;
+  padding: 20px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+
+.button {
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  border-radius: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border-radius: 20px;
+
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 20px;
+
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #000000;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+#home img{
+  height: 200px;
+  width: 200px;
+  top: 20px;
+  border-radius: 100%;
+}
+
+#home img:hover {
+    transform: rotatey(180deg);
+    transition: transform .5s ease; /* Gradual rotation */
+}
+
+/* this is section for about styling */
+#about{
+  background-color: rgb(37, 83, 235);
+  align-content: center;
+}
+#about h1{
+  color: darkslategrey;
+  text-align: center;
+}
+/* styling of skills */
+#skills{
+  background-color: rgb(37, 83, 205);
+
+}
+.bar{
+  border:2px #000000 solid;
+  height: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+/* Project
+ */
+.project{
+  position: relative;
+  overflow:hidden;
+}
+
+.overlay {
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  background: #ffc86b;
+  background: linear-gradient(transparent, #ffc86b 50%);
+}
+
+.overlay-left {
+  height: 100%;
+  height: 0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.project:hover .overlay-left {
+  height: 100%;
+}
+.p-con {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+@media (min-width: 640px) and (max-width: 900px) {
+  #navItem {
+    width: 50.333333%;
+    margin-right: 8px;
+  }
+  .logo {
+    width: 50.333333%;
+    margin-right: 8px;
+  }
+}
